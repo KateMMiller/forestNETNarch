@@ -1,0 +1,44 @@
+Package: forestNETNarch
+Type: Package
+Title: Package for importing, joining and querying MS Access based NETN forest database tables
+Version: 0.1.4
+Author: Kate Miller
+Maintainer: Kate Miller <kathryn_miller@nps.gov>
+Description: This package contains functions that import database tables from the original MS Access NETN forest backend using odbc (must use 32-bit R for import), that join tables together and that filter by park, year, location type and visit type.
+License: Public Domain
+Depends:
+    R(>= 4.0)
+Collate: 
+    'joinLocEvent.R'
+    'joinTreeData.R'
+    'joinStandData.R'
+    'calcStrStage.R'
+    'exportCSV.R'
+    'importCSV.R'
+    'importData.R'
+    'joinCWDData.R'
+    'joinMicroShrubData.R'
+    'joinQuadData.R'
+    'joinRegenData.R'
+    'joinSoilLabData.R'
+    'joinSoilSampleData.R'
+    'makeSppList.R'
+    'sumQuadGuilds.R'
+    'sumTreeDBHDist.R'
+    'theme_FHM.R'
+    'treeMapPrep.R'
+    'treeMap.R'
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: 
+    dplyr,
+    magrittr,
+    stringr,
+    ggplot2,
+    tidyr
+Suggests: 
+    odbc,
+    DBI,
+    ggrepel,
+    cowplot    
