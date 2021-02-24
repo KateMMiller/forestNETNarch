@@ -4,7 +4,7 @@ Title: Package for importing, joining and querying MS Access based NETN forest d
 Version: 0.1.4
 Author: Kate Miller
 Maintainer: Kate Miller <kathryn_miller@nps.gov>
-Description: This package contains functions that import database tables from the original MS Access NETN forest backend using odbc (must use 32-bit R for import), that join tables together and that filter by park, year, location type and visit type. This is now archived.
+Description: This package contains functions that import database tables from the original MS Access NETN forest backend using odbc, that join tables together and that filter by park, year, location type and visit type. This is now archived.
 License: Public Domain
 Depends:
     R(>= 4.0)
