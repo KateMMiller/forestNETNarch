@@ -111,7 +111,7 @@ joinSoilLabData <- function(park = 'all', from = 2007, to = 2018, layers = c('al
 
  soilvars <- names(soil_qc3[,10:37])
 
- soil_qc4 <- soil_qc3 %>% group_by(Event_ID, Soil_Data_ID, Unit_Code, Plot_Name, Plot_Number, Year, cycle, Year, layer_new) %>%
+ soil_qc4 <- soil_qc3 %>% group_by(Event_ID, Soil_Data_ID, Unit_Code, Plot_Name, Plot_Number, Year, cycle, layer_new) %>%
       summarise_at(vars(soilvars), list(~weighted.mean(., Hor_Depth))) %>% rename(Horizon=layer_new)
 
  soil_qc4b <- soil_qc3 %>% group_by(Event_ID, Soil_Data_ID, layer_new) %>%
